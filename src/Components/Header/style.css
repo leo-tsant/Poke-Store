@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.leftHeader a {
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+}
+
+.pages a:hover {
+    text-decoration: underline;
+    border-bottom: 2px solid rgb(255, 249, 249); /* Thicker blue underline on hover */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Press Start 2P";
+}
+
+.title {
+    display: flex;
+    gap: 4px;
+    font-size: 30px;
+}
+
+.pages {
+    display: flex;
+    gap: 20px;
+    padding-top: 4px;
+}
+
+.leftHeader {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.poke {
+    color: rgb(242, 50, 50);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.memo {
+    color: rgb(252, 243, 243);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cartButton img {
+    width: 50px;
+    height: auto;
+    color: white;
+}
+
+.cartCount {
+    position: absolute; /* Position the badge relative to the icon */
+    top: 38px; /* Adjust positioning as needed */
+    right: 28px;
+    color: white;
+    padding: 2px 5px; /* Adjust padding based on font size and icon size */
+    border-radius: 50%;
+    font-size: 14px;
+    min-width: 16px; /* Ensures badge is wide enough for two-digit numbers */
+    text-align: center;
+}
+
+/* Optional: Style the cart icon container to make it relative */
+.cartIconContainer {
+    position: relative; /* This allows absolute positioning of the badge */
+}

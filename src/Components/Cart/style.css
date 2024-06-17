@@ -1,0 +1,145 @@
+.cartContent {
+    display: flex; /* Use flexbox for easy alignment */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Center items horizontally */
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+.cartHeader {
+    display: flex;
+    align-items: baseline;
+    position: absolute; /* Make the header absolute positioned */
+    top: 10%; /* Position it at the top */
+    left: 44%; /* Position it at the center */
+}
+.cartTitle {
+    font-size: 2rem;
+    color: #333;
+}
+
+.numberOfItemsInCart {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.emptyCart {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    font-size: 1.2em;
+}
+
+.cartBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure items stretch to fill available space */
+    height: 100%; /* Ensure cartBody takes full height */
+    width: 100%; /* Ensure cartBody takes full width */
+}
+
+.cartItem {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.8fr 1fr;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    gap: 3rem;
+    width: 100%; /* Make each list item take up the full width of its parent */
+}
+
+.itemImage {
+    display: grid;
+    background-color: rgba(188, 203, 222, 0.2);
+    border-radius: 10px;
+    padding: 18px;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.itemImage:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    background-color: rgba(188, 203, 222, 0.2);
+}
+
+li {
+    list-style-type: none;
+}
+
+.itemCartDetails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.deleteFromCartButton {
+    background-color: #db1709;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.deleteFromCartButton:hover {
+    background-color: #c22c2c;
+}
+
+.priceTag {
+}
+
+.orderSummary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+    height: fit-content;
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 5px; /* Round the corners */
+    background-color: rgba(188, 203, 222, 0.2);
+    padding: 20px 18px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.totalCost {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.checkoutButton {
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate that it's clickable */
+}
+
+.checkoutButton:hover {
+    background-color: #015ec2; /* Darker blue on hover */
+}
+
+.cartInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: baseline;
+}
+
+.cost {
+    display: flex;
+    align-items: baseline;
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures padding doesn't add extra width/height */
+}
+
+link[rel="icon"] {
+    width: 50px;
+    height: auto;
+}
+
+body {
+    background-image: url("./Images/background2.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    backdrop-filter: blur(1px); /* Adjust blur intensity */
+}
+
+.mainContainer {
+    height: 100%;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100px 1fr 50px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
