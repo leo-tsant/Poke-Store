@@ -1,7 +1,7 @@
 # Poké-Store
 
 Live Demo:  
-https://musical-cranachan-388f84.netlify.app/
+https://leo-tsant-poke-store.netlify.app/
 
 ![Project Screenshot](./src/Images/poke-store.png)
 
